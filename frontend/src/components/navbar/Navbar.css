@@ -1,0 +1,234 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: var(--card-bg);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: var(--transition);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.nav-logo-img:hover {
+    transform: scale(1.08);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.nav-logo p {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+    color: var(--dark-text);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+}
+
+.nav-menu li a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.nav-menu li:hover a {
+    color: var(--primary-color);
+}
+
+.nav-menu li hr {
+    border: none;
+    width: 0;
+    height: 3px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transition: var(--transition);
+    display: none;
+}
+
+.nav-menu li hr.active {
+    width: 100%;
+    display: block;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-login-cart button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: var(--transition);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-login-cart button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-login-cart button:active {
+    transform: scale(0.98);
+}
+
+.nav-login-cart button.history-btn {
+    background: linear-gradient(135deg, var(--success-color) 0%, #059669 100%);
+    padding: 10px 18px;
+    font-size: 13px;
+}
+
+.nav-login-cart a {
+    text-decoration: none;
+}
+
+.nav-cart-icon {
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-cart-icon img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.nav-cart-icon:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nav-cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--danger-color);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .nav-logo p {
+        font-size: 18px;
+    }
+
+    .nav-login-cart {
+        gap: 10px;
+    }
+
+    .nav-login-cart button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .nav-cart-icon img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .nav-logo {
+        gap: 8px;
+    }
+
+    .nav-logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-logo p {
+        font-size: 16px;
+    }
+
+    .nav-menu {
+        gap: 16px;
+        font-size: 11px;
+    }
+
+    .nav-login-cart {
+        gap: 6px;
+    }
+
+    .nav-login-cart button {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .nav-cart-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-cart-count {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+}

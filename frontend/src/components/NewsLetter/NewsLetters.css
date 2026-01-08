@@ -1,0 +1,72 @@
+.newsletter{
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-light) 0%, #F3E8FF 100%);
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.newsletter h1{
+    color: var(--dark-text);
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.newsletter p{
+    color: var(--light-text);
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+.newsletter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 600px;
+    height: 56px;
+    border-radius: var(--radius-full);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+}
+
+.newsletter input{
+    width: 100%;
+    margin-left: 20px;
+    border: none;
+    color: var(--dark-text);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+}
+
+.newsletter input::placeholder {
+    color: var(--muted-text);
+}
+
+.newsletter div button{
+    width: 140px;
+    height: 56px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+    transition: var(--transition);
+}
+
+.newsletter div button:hover {
+    transform: scale(1.02);
+}
