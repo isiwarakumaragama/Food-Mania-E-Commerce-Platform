@@ -16,11 +16,6 @@ A full-stack e-commerce platform for restaurant order management. Users can brow
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
 - [Project Structure](#project-structure)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
